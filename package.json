@@ -2,7 +2,7 @@
 	"name": "better-file-icons",
 	"displayName": "Better File Icons",
 	"description": "File-specific icons in VSCode for improved visual grepping.",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"publisher": "lukedavis",
 	"license": "MIT",
 	"author": "Luke Davis <luke@finesse.host>",

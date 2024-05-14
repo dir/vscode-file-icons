@@ -1,5 +1,4 @@
-Copyright (c) 2017-2019 Daniel Brooker
-Copyright (c) 2019-2023 John Gardner
+Copyright (c) 2012-2024 Luke Davis and others
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

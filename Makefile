@@ -1,6 +1,6 @@
 PATH := ./node_modules/.bin:$(PATH)
 
-all: install update lint
+all: install release
 
 # Install or download project dependencies
 install: node_modules defs
@@ -20,12 +20,6 @@ update: defs
 	cd $^ && git pull -f origin master
 	node scripts/update.mjs $^ ./icons
 
-# Check source for errors and style violations
-lint: node_modules
-	eslint .
-
-.PHONY: lint
-
 # Package a VSIX bundle for uploading to VSCode's marketplace thingie
 release: tmp
 	cp scripts/content-types.xml 'tmp/[Content_Types].xml'
@@ -33,11 +27,11 @@ release: tmp
 	sed -e "s/%%VERSION%%/`cat version`/g" scripts/extension.xml > tmp/extension.vsixmanifest
 	mkdir tmp/extension
 	cp -r CHANGELOG.md LICENSE.md README.md icons package.json thumbnail.png tmp/extension
-	vsix="file-icons.file-icons-`cat version`.vsix"; \
+	vsix="lukedavis.better-file-icons`cat version`.vsix"; \
 	cd tmp && zip -r "$$vsix" *
 	mv tmp/*.vsix .
 	rm -rf version tmp
-	open 'https://marketplace.visualstudio.com/manage/publishers/file-icons'
+	open 'https://marketplace.visualstudio.com/manage/publishers/lukedavis'
 
 tmp:; mkdir $@
 
