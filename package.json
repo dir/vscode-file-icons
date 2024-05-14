@@ -1,16 +1,18 @@
 {
-	"name": "file-icons",
-	"displayName": "file-icons",
+	"name": "better-file-icons",
+	"displayName": "Better File Icons",
 	"description": "File-specific icons in VSCode for improved visual grepping.",
-	"version": "1.1.0",
-	"publisher": "file-icons",
+	"version": "0.5.0",
+	"publisher": "lukedavis",
 	"license": "MIT",
-	"author": "Daniel Brooker <dan@nocturnalcode.com>",
-	"maintainers": [{
-		"name": "John Gardner",
-		"email": "gardnerjohng@gmail.com",
-		"url": "https://github.com/Alhadis"
-	}],
+	"author": "Luke Davis <luke@finesse.host>",
+	"maintainers": [
+		{
+			"name": "Luke Davis",
+			"email": "luke@finesse.host",
+			"url": "https://github.com/dir"
+		}
+	],
 	"engines": {
 		"node": ">=15",
 		"vscode": "^1.5.0"
@@ -38,31 +40,27 @@
 		"theme"
 	],
 	"contributes": {
-		"iconThemes": [{
-			"id": "file-icons",
-			"label": "File Icons",
-			"path": "./icons/file-icons-icon-theme.json"
-		},{
-			"id": "file-icons-colourless",
-			"label": "File Icons (Colourless)",
-			"path": "./icons/file-icons-colourless-icon-theme.json"
-		}]
+		"iconThemes": [
+			{
+				"id": "file-icons",
+				"label": "File Icons",
+				"path": "./icons/file-icons-icon-theme.json"
+			},
+			{
+				"id": "file-icons-colourless",
+				"label": "File Icons (Colourless)",
+				"path": "./icons/file-icons-colourless-icon-theme.json"
+			}
+		]
 	},
 	"scripts": {
 		"import": "make update",
 		"lint": "make lint"
 	},
-	"eslintConfig": {
-		"extends": "@alhadis",
-		"overrides": [{
-			"files": ["scripts/*.mjs"],
-			"rules": {"no-irregular-whitespace": 0}
-		}],
-		"rules": {"camelcase": 0}
-	},
-	"eslintIgnore": ["defs"],
+	"eslintIgnore": [
+		"defs"
+	],
 	"devDependencies": {
-		"@alhadis/eslint-config": "^2.3.4",
 		"@babel/eslint-parser": "^7.15.0",
 		"cson": "^7.20.0",
 		"eslint": "^7.32.0",

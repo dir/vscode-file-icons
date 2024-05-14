@@ -7427,7 +7427,8 @@
 		"zsh": "_terminal",
 		"zsh_history": "_terminal",
 		"zsh-theme": "_terminal",
-		"ztl": "_zbrush"
+		"ztl": "_zbrush",
+		"env": "_dotenv"
 	},
 	"fileNames": {
 		"abbrev-defs": "_emacs",
