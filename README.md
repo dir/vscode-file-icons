@@ -36,7 +36,7 @@ Please request new icons over at [`dir/vscode-file-icons`](https://github.com/di
 
 <!-- Referenced links --------------------------------------------------------->
 
-[VSC-version]: https://img.shields.io/visual-studio-marketplace/v/file-icons.file-icons?color=4c1&label=Visual%20Studio%20Marketplace
-[VSC-link]: https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons
+[VSC-version]: https://img.shields.io/visual-studio-marketplace/v/lukedavis.better-file-icons?color=4c1&label=Visual%20Studio%20Marketplace
+[VSC-link]: https://marketplace.visualstudio.com/items?itemName=lukedavis.better-file-icons
 [command palette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette
 [Icon previews]: https://raw.githubusercontent.com/file-icons/atom/6714706f268e257100e03c9eb52819cb97ad570b/preview.png
