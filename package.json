@@ -19,10 +19,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/file-icons/vscode"
+		"url": "https://github.com/dir/vscode-file-icons"
 	},
-	"bugs": "https://github.com/file-icons/vscode/issues",
-	"homepage": "https://github.com/file-icons/vscode",
+	"bugs": "https://github.com/dir/vscode-file-icons/issues",
+	"homepage": "https://github.com/dir/vscode-file-icons",
 	"icon": "./thumbnail.png",
 	"galleryBanner": {
 		"color": "#15191B",
