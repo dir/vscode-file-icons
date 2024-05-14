@@ -5119,6 +5119,7 @@
 		"ens": "_book",
 		"ensime": "_ensime",
 		"entl": "_book",
+		"env": "_dotenv",
 		"enw": "_book",
 		"enz": "_book",
 		"eot": "_font",
@@ -7427,8 +7428,7 @@
 		"zsh": "_terminal",
 		"zsh_history": "_terminal",
 		"zsh-theme": "_terminal",
-		"ztl": "_zbrush",
-		"env": "_dotenv"
+		"ztl": "_zbrush"
 	},
 	"fileNames": {
 		"abbrev-defs": "_emacs",
