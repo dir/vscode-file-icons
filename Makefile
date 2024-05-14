@@ -2,7 +2,6 @@ PATH := ./node_modules/.bin:$(PATH)
 
 all: install update lint
 
-
 # Install or download project dependencies
 install: node_modules defs
 
@@ -16,20 +15,16 @@ defs:
 node_modules:
 	npm install --legacy-peer-deps .
 
-
 # Pull the latest updates from upstream
 update: defs
 	cd $^ && git pull -f origin master
 	node scripts/update.mjs $^ ./icons
-
 
 # Check source for errors and style violations
 lint: node_modules
 	eslint .
 
 .PHONY: lint
-
-
 
 # Package a VSIX bundle for uploading to VSCode's marketplace thingie
 release: tmp
@@ -45,7 +40,6 @@ release: tmp
 	open 'https://marketplace.visualstudio.com/manage/publishers/file-icons'
 
 tmp:; mkdir $@
-
 
 # Wipe generated files and build artefacts
 clean:
